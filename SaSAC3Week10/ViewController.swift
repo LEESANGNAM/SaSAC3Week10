@@ -6,36 +6,82 @@
 //
 
 import UIKit
-
+import SnapKit
+import Kingfisher
 
 class ViewController: UIViewController {
+    
+    let viewModel = ViewModel()
+    
+    private lazy var scrollView = {
+        let view = UIScrollView()
+        view.backgroundColor = .systemBlue
+        view.minimumZoomScale = 1
+        view.maximumZoomScale = 4
+        view.showsVerticalScrollIndicator = false
+        view.showsHorizontalScrollIndicator = false
+        view.delegate = self
+        return view
+    }()
+    
+    private let imageView = {
+        let view = UIImageView(frame: .zero)
+        view.backgroundColor = .lightGray
+        view.contentMode = .scaleAspectFit
+        view.isUserInteractionEnabled = true
+        return view
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view. "ZHGh3WaaTf4"
-        Network.shared.request(type: PhotoResult.self, api: .detail(id: "ZHGh3WaaTf4")) { response in
-            switch response {
-            case .success(let success):
-                dump(success)
-            case .failure(let failure):
-                print(failure.errorDescription)
-            }
-        }
-//        Network.shared.request(type: PhotoResult.self, api: .random) { response in
-//            switch response {
-//            case .success(let success):
-//                dump(success)
-//            case .failure(let failure):
-//                print(failure.errorDescription)
-//            }
-//        }
+        setHierachy()
+        setconstraints()
+        setUpGesture()
         
+        viewModel.request { url in
+            self.imageView.kf.setImage(with: url)
+        }
+        
+    }
+   private func setUpGesture(){
+        let tap = UITapGestureRecognizer(target: self, action: #selector(doubleTapGestrue))
+        tap.numberOfTapsRequired = 2
+        imageView.addGestureRecognizer(tap)
+    }
+    
+    @objc private func doubleTapGestrue(){
+        if scrollView.zoomScale == 1{
+            scrollView.setZoomScale(2, animated: true)
+        }else{
+            scrollView.setZoomScale(1, animated: true)
+        }
     }
     
     
-   
+    private func setconstraints(){
+        scrollView.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.size.equalTo(200)
+        }
+        imageView.snp.makeConstraints { make in
+            make.size.equalTo(scrollView)
+        }
+    }
     
+    private func setHierachy(){
+        view.addSubview(scrollView)
+        scrollView.addSubview(imageView)
+    }
 }
+
+extension ViewController: UIScrollViewDelegate{
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return imageView
+    }
+}
+
 
 
 struct Photo: Decodable {
