@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D626044C2ABBCB3900A04873 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D626044B2ABBCB3900A04873 /* SearchViewController.swift */; };
+		D626044E2ABBE0FB00A04873 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D626044D2ABBE0FB00A04873 /* SearchCollectionViewCell.swift */; };
 		D6A25ED32AB9293900FB8FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A25ED22AB9293900FB8FFE /* AppDelegate.swift */; };
 		D6A25ED52AB9293900FB8FFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A25ED42AB9293900FB8FFE /* SceneDelegate.swift */; };
 		D6A25ED72AB9293900FB8FFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A25ED62AB9293900FB8FFE /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D626044B2ABBCB3900A04873 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D626044D2ABBE0FB00A04873 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		D6A25ECF2AB9293900FB8FFE /* SaSAC3Week10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaSAC3Week10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A25ED22AB9293900FB8FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6A25ED42AB9293900FB8FFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				D6A25ED22AB9293900FB8FFE /* AppDelegate.swift */,
 				D6A25ED42AB9293900FB8FFE /* SceneDelegate.swift */,
 				D6A25ED62AB9293900FB8FFE /* ViewController.swift */,
+				D626044B2ABBCB3900A04873 /* SearchViewController.swift */,
+				D626044D2ABBE0FB00A04873 /* SearchCollectionViewCell.swift */,
 				D6A25F172ABA9A9000FB8FFE /* ViewModel.swift */,
 				D6A25ED82AB9293900FB8FFE /* Main.storyboard */,
 				D6A25EDB2AB9293B00FB8FFE /* Assets.xcassets */,
@@ -272,6 +278,7 @@
 				D6A25EFE2AB9B88B00FB8FFE /* BeerViewModel.swift in Sources */,
 				D6A25F0F2AB9F38B00FB8FFE /* BeerView.swift in Sources */,
 				D6A25EFC2AB9B88600FB8FFE /* BeerViewController.swift in Sources */,
+				D626044E2ABBE0FB00A04873 /* SearchCollectionViewCell.swift in Sources */,
 				D6A25ED72AB9293900FB8FFE /* ViewController.swift in Sources */,
 				D6A25ED32AB9293900FB8FFE /* AppDelegate.swift in Sources */,
 				D6A25F182ABA9A9000FB8FFE /* ViewModel.swift in Sources */,
@@ -280,6 +287,7 @@
 				D6A25F162ABA764F00FB8FFE /* Router.swift in Sources */,
 				D6A25EF22AB92C5900FB8FFE /* APIKey.swift in Sources */,
 				D6A25ED52AB9293900FB8FFE /* SceneDelegate.swift in Sources */,
+				D626044C2ABBCB3900A04873 /* SearchViewController.swift in Sources */,
 				D6A25F142ABA08DB00FB8FFE /* TestViewController.swift in Sources */,
 				D6A25F0A2AB9B99000FB8FFE /* BeerNetwork.swift in Sources */,
 				D6A25F002AB9B8AA00FB8FFE /* Beer.swift in Sources */,
