@@ -34,11 +34,34 @@ class SearchViewController: UIViewController{
     }
     
     func configureCollectionLayout() -> UICollectionViewLayout {
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 50, height: 50)
-        layout.scrollDirection = .vertical
+        
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1/3), heightDimension: .fractionalHeight(1.0)) // group height 가 80이라 80
+        
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(80))
+        // .absolute(80) : 절대적인 사이즈, fractionalWidth : 상대적인 사이즈
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, repeatingSubitem: item, count: 6)
+        group.interItemSpacing = .fixed(10)
+        
+        
+        
+        let section = NSCollectionLayoutSection(group: group)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10) // inset
+        
+        
+        let layout = UICollectionViewCompositionalLayout(section: section)
+        
         return layout
     }
+    
+//    func configureCollectionLayout() -> UICollectionViewLayout {
+//        let layout = UICollectionViewFlowLayout()
+//        layout.itemSize = CGSize(width: 50, height: 50)
+//        layout.scrollDirection = .vertical
+//        return layout
+//    }
     func configureDataSouce(){
         let registration = UICollectionView.CellRegistration<SearchCollectionViewCell,Int>(handler: { cell, indexPath, itemIdentifier in
             cell.imageView.image = UIImage(systemName: "star")
