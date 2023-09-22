@@ -34,6 +34,7 @@
 		D6A25F142ABA08DB00FB8FFE /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A25F132ABA08DB00FB8FFE /* TestViewController.swift */; };
 		D6A25F162ABA764F00FB8FFE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A25F152ABA764F00FB8FFE /* Router.swift */; };
 		D6A25F182ABA9A9000FB8FFE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A25F172ABA9A9000FB8FFE /* ViewModel.swift */; };
+		D6D92EF82ABD17080074236E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D92EF72ABD17080074236E /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		D6A25F132ABA08DB00FB8FFE /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		D6A25F152ABA764F00FB8FFE /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D6A25F172ABA9A9000FB8FFE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D6D92EF72ABD17080074236E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				D626044B2ABBCB3900A04873 /* SearchViewController.swift */,
 				D626044D2ABBE0FB00A04873 /* SearchCollectionViewCell.swift */,
 				D6A25F172ABA9A9000FB8FFE /* ViewModel.swift */,
+				D6D92EF72ABD17080074236E /* Constant.swift */,
 				D6A25ED82AB9293900FB8FFE /* Main.storyboard */,
 				D6A25EDB2AB9293B00FB8FFE /* Assets.xcassets */,
 				D6A25EDD2AB9293B00FB8FFE /* LaunchScreen.storyboard */,
@@ -281,6 +284,7 @@
 				D626044E2ABBE0FB00A04873 /* SearchCollectionViewCell.swift in Sources */,
 				D6A25ED72AB9293900FB8FFE /* ViewController.swift in Sources */,
 				D6A25ED32AB9293900FB8FFE /* AppDelegate.swift in Sources */,
+				D6D92EF82ABD17080074236E /* Constant.swift in Sources */,
 				D6A25F182ABA9A9000FB8FFE /* ViewModel.swift in Sources */,
 				D6A25F062AB9B90000FB8FFE /* APIManager.swift in Sources */,
 				D6A25EF72AB9649D00FB8FFE /* SeSacAPI.swift in Sources */,
