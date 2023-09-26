@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D626044C2ABBCB3900A04873 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D626044B2ABBCB3900A04873 /* SearchViewController.swift */; };
 		D626044E2ABBE0FB00A04873 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D626044D2ABBE0FB00A04873 /* SearchCollectionViewCell.swift */; };
+		D62B07742AC2706D002C7EAB /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62B07732AC2706D002C7EAB /* Sample.swift */; };
 		D6A25ED32AB9293900FB8FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A25ED22AB9293900FB8FFE /* AppDelegate.swift */; };
 		D6A25ED52AB9293900FB8FFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A25ED42AB9293900FB8FFE /* SceneDelegate.swift */; };
 		D6A25ED72AB9293900FB8FFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A25ED62AB9293900FB8FFE /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		D626044B2ABBCB3900A04873 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D626044D2ABBE0FB00A04873 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		D62B07732AC2706D002C7EAB /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		D6A25ECF2AB9293900FB8FFE /* SaSAC3Week10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaSAC3Week10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A25ED22AB9293900FB8FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6A25ED42AB9293900FB8FFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				D6A25EEF2AB92C4100FB8FFE /* .gitIgnore */,
 				D6A25EF12AB92C5800FB8FFE /* APIKey.swift */,
 				D6A25F132ABA08DB00FB8FFE /* TestViewController.swift */,
+				D62B07732AC2706D002C7EAB /* Sample.swift */,
 			);
 			path = SaSAC3Week10;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				D6A25F0A2AB9B99000FB8FFE /* BeerNetwork.swift in Sources */,
 				D6A25F002AB9B8AA00FB8FFE /* Beer.swift in Sources */,
 				D6A25EF92AB9744400FB8FFE /* Network.swift in Sources */,
+				D62B07742AC2706D002C7EAB /* Sample.swift in Sources */,
 				D6A25EF52AB93CCF00FB8FFE /* NetworkBasic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
